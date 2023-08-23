@@ -2,15 +2,47 @@
 <html>
     <head>
         <title>Home</title>
+        <style type="text/css">
+            button{
+                color: black;
+                background-color: white;
+            }
+            .tooltip-text {
+                visibility: hidden;
+                position: absolute;
+                z-index: 1;
+                width: 100px;
+                color: white;
+                font-size: 12px;
+                background-color: #192733;
+                border-radius: 10px;
+                padding: 10px 15px 10px 15px;
+            }
+            .hover-text:hover .tooltip-text {
+                visibility: visible;
+            }
+            .hover-text {
+                position: relative;
+                display: inline-block;
+                margin: 40px;
+                font-family: Arial;
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
         <nav>
             <a href="index.html">
                 <img src = "logo.png">
             </a>
-            <a href="game.html">
-                <button>game</button>
-            </a>
+            <center>
+                <div class="hover-text">
+                    <a href="game.html">
+                        <button>game</button>
+                    </a>
+                    <span class="tooltip-text">Wanna Play A Game ?</span>
+                </div>
+            </center>
         </nav>
     </body>
 </html>
